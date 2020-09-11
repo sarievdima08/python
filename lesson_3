@@ -1,0 +1,86 @@
+1.
+def div (* args):
+    пытаться:
+        arg1 = int (input («Входное делимое»))
+        arg2 = int (input («Входной делитель»))
+        res = arg1 / arg2
+    кроме ValueError:
+        вернуть 'Value error'
+    кроме ZeroDivisionError:
+        return "Неправильный делитель! Ноль нельзя использовать в качестве делителя"
+
+    вернуть res
+
+
+'' '
+    если arg2! = 0:
+        вернуть arg1 / arg2
+    еще:
+        print ("Неверное число! Делитель не может быть нулевым")
+'' '
+
+печать (f'result {div ()} ')
+2.
+'' '
+    name = input ('введите имя')
+    surname = input ('введите фамилию')
+    year = int (input ('введите год'))
+    city ​​= input ('введите город')
+    email = input ('введите адрес электронной почты')
+    телефон = вход ('входной телефон')
+'' '
+
+
+def my_func (имя, фамилия, год, город, электронная почта, телефон):
+    return '' .join ([имя, фамилия, год, город, электронная почта, телефон])
+
+
+print (my_func (surname = 'Sariev', name = 'Dima', year = '1988', city = 'Elista', email='sariev_dima@mail.ru ',
+              телефон = '8-967-625-34-90'))
+3.
+def my_func (arg1, arg2, arg3):
+    если arg1> = arg3 и arg2> = arg3:
+        вернуть arg1 + arg2
+    elif arg1> arg2 и arg1 <arg3:
+        вернуть arg1 + arg3
+    еще:
+        вернуть arg2 + arg3
+
+
+print (f'Result - {my_func (int (input («введите первый аргумент»)), int (input («введите второй аргумент»)), int (input («введите третий аргумент»)))} ')
+4.
+def мощность (x, y):
+    res = 1
+    для i в диапазоне (abs (y)):
+        res * = x
+    если y> = 0:
+        вернуть res
+    еще:
+        возврат 1 / разрешение
+
+
+print (power (float (input ("Первое значение -")), int (input ("Второе значение -"))))
+
+5.
+def my_sum ():
+    sum_res = 0
+    ex = Ложь
+    в то время как ex == False:
+        number = input ('Введите числа или Q для выхода -') .split ()
+
+        res = 0
+        для el в диапазоне (len (число)):
+            если число [el] == 'q' или число [el] == 'Q':
+                ex = True
+                перерыв
+            еще:
+                res = res + int (число [эл])
+        sum_res = sum_res + res
+        print (f'Текущая сумма {sum_res} ')
+    print (f'Ваша окончательная сумма равна {sum_res} ')
+6.
+def int_func (*args):
+    word = input("Input words ")
+    print(word.title())
+    return
+int_func()
